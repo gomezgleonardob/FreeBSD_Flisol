@@ -1,0 +1,39 @@
+\documentclass[11pt,spanish,dvipsnames]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\usetikzlibrary{patterns}
+
+\newcommand{\titulo}{Certamen 1, miércoles 21 de diciembre de 2011}
+
+\input{../../latex/encabezado.tex}
+\input{../../latex/definiciones.tex}
+
+\begin{document}
+  \begin{enumerate}[font=\Large\bfseries]
+    \item
+      \pond{25}
+      \input{ruteo/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{paracaidista/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{stringones/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{enrachao/pregunta.tex}
+  \end{enumerate}
+\end{document}
+

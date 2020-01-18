@@ -1,0 +1,38 @@
+\documentclass[11pt,spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fullpage}
+\usepackage{listingsutf8}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\newcommand{\titulo}{Certamen 2, sábado 19 de noviembre de 2011}
+
+\input{../../latex/encabezado.tex}
+\input{../../latex/definiciones.tex}
+\lstset{inputencoding=utf8/latin1}
+
+\begin{document}
+  \begin{enumerate}[font=\Large\bfseries]
+    \item
+      \pond{25}
+      \input{programitas/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{funciones-libros/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{dias-restriccion/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{antenas/pregunta.tex}
+  \end{enumerate}
+\end{document}
+

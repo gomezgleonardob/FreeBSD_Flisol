@@ -1,0 +1,167 @@
+\documentclass[12pt]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{courier}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\input{../latex/definiciones.tex}
+
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\title{Productos matriciales}
+\author{
+  Programación \\ \url{http://progra.usm.cl}
+}
+\date{}
+
+\begin{document}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+  \begin{frame}
+    \label{repaso-arreglos}
+    \frametitle{Repaso de arreglos}
+    \lstinputlisting%[linerange=]
+        {programas/repaso-arreglos.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-interno}
+    \frametitle{Producto interno}
+    \includegraphics[width=\textwidth]{../diagramas/producto-interno.pdf}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-interno-numpy}
+    \frametitle{Producto interno en NumPy}
+    \lstinputlisting[linerange=DOT-FIN\ DOT]
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicios-producto-interno}
+    \frametitle{Ejercicio 1}
+    ¿Cuáles son los resultados
+    de las siguientes operaciones?
+    \lstinputlisting[linerange=EJERCICIO\ 1-FIN\ EJERCICIO\ 1]%
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejemplos-producto-interno}
+    \frametitle{Ejemplos de uso del producto interno}
+    \lstinputlisting[linerange=EJEMPLOS\ PRODUCTO\ INTERNO-FIN\ EJEMPLOS\ PRODUCTO\ INTERNO]%
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-matriz-vector}
+    \frametitle{Producto matriz-vector}
+    \includegraphics[width=\textwidth]{../diagramas/matriz-vector.pdf}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-matriz-vector-numpy}
+    \frametitle{Producto matriz-vector en NumPy}
+    \lstinputlisting[linerange=MATRIZ\ VECTOR-FIN\ MATRIZ\ VECTOR]
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicios-producto-matriz-vector}
+    \frametitle{Ejercicio 2}
+    ¿Cuáles son los resultados
+    de las siguientes operaciones?
+    \lstinputlisting[linerange=EJERCICIO\ 2-FIN\ EJERCICIO\ 2]%
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicio-nutrientes}
+    \frametitle{Ejercicio 3}
+    La siguiente tabla muestra cuántos gramos de nutrientes
+    son aportados por cada 100 gramos de ciertos alimentos:
+    \vspace{2ex}
+
+    {\footnotesize
+    \begin{tabular}{lp{6em}p{6em}p{4.5em}}
+      & \raggedright Leche descremada & \raggedright Harina de soya & {\raggedright Suero de leche} \\\hline
+      Proteínas     &  36 &   51 &   13  \\\hline
+      Carbohidratos &  52 &   34 &   74  \\\hline
+      Grasa         &   0 &    7 &  1.1  \\\hline
+    \end{tabular}}
+
+    \vspace{2ex}
+    El doctor Alan Howard está diseñando una nueva dieta,
+    y desea calcular su aporte nutritivo
+    en función de las cantidades recomendadas de alimentos.
+
+    \vspace{2ex}
+    Escriba un programa que pregunte la cantidades de leche, harina y suero
+    recomendadas por la dieta, y que muestre como salida
+    los aportes en cada uno de los nutrientes.
+  \end{frame}
+
+  \begin{frame}
+    \label{caso-nutrientes}
+    \frametitle{Ejercicio 3---caso de prueba}
+    \lstinputlisting[language=testcase]{programas/caso-dieta.txt}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-matriz-matriz}
+    \frametitle{Producto matriz-matriz}
+    \includegraphics[width=\textwidth]{../diagramas/matriz-matriz.pdf}
+  \end{frame}
+
+  \begin{frame}
+    \label{producto-matriz-matriz-numpy}
+    \frametitle{Producto matriz-matriz en NumPy}
+    \lstinputlisting[linerange=MATRIZ\ MATRIZ-FIN\ MATRIZ\ MATRIZ]
+        {programas/producto-interno.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicio-acero}
+    \frametitle{Ejercicio 4}
+    Para producir acero,
+    la empresa VÖST Alpine necesita
+    hierro y carbón. Las demandas en toneladas por semana son:
+
+    \begin{center}
+      {\footnotesize
+      \begin{tabular}{lrr}
+        & Hierro & Carbón \\ \hline
+        Semana 1 &  9 &   8 \\\hline
+        Semana 2 &  5 &   7 \\\hline
+        Semana 3 &  6 &   4 \\\hline
+      \end{tabular}}
+      \vfill
+    \end{center}
+
+    Tres proveedores ofrecen estas materias primas. \\
+    ¿Cuál ofrece mayor beneficio?
+    \vfill
+
+    \begin{center}
+      {\footnotesize
+      \begin{tabular}{lrrr}
+        & Ruhr AG & Iron One & Hard Coal \\\hline
+        Hierro & \$540 & \$630 & \$530 \\\hline
+        Carbón & \$420 & \$410 & \$440 \\\hline
+      \end{tabular}}
+      \vspace{2ex}
+    \end{center}
+  \end{frame}
+\end{document}
+

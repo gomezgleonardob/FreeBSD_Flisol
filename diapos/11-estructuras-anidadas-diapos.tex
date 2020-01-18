@@ -1,0 +1,229 @@
+\documentclass[12pt]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{courier}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usepackage{pifont}
+\newcommand{\T}{\ding{51}}
+%\newcommand{\F}{\ding{55}}
+\newcommand{\F}{}
+
+
+\input{../latex/definiciones.tex}
+
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\title{Estructuras de datos anidadas}
+\author{
+  Programación \\ \url{http://progra.usm.cl}
+}
+\date{}
+
+\begin{document}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+  \begin{frame}
+    \label{repaso}
+    \frametitle{Repaso}
+    \small
+    \def\sep{-1ex}
+    \begin{columns}[T]
+      \column{0.5\textwidth}
+        Listas:
+        \begin{itemize}
+          \setlength{\itemsep}{\sep}
+          \item tienen orden
+          \item mutables
+          \item \li!list()!
+          \item \li![1, 2, 3]!
+        \end{itemize}
+      \column{0.5\textwidth}
+        Tuplas:
+        \begin{itemize}
+          \setlength{\itemsep}{\sep}
+          \item tienen orden
+          \item inmutables
+          \item \li!tuple()!
+          \item \li!(1, 2, 3)!
+        \end{itemize}
+    \end{columns}
+    \vfill
+    \begin{columns}[T]
+      \column{0.5\textwidth}
+        Diccionarios:
+        \begin{itemize}
+          \setlength{\itemsep}{\sep}
+          \item no tienen orden
+          \item pares llave-valor
+          \item llaves no repetidas
+          \item mutables
+          \item \li!dict()!
+          \item \li!\{1: 2, 3: 4\}!
+        \end{itemize}
+      \column{0.5\textwidth}
+        Conjuntos:
+        \begin{itemize}
+          \setlength{\itemsep}{\sep}
+          \item no tienen orden
+          \item elementos no repetidos
+          \item mutables
+          \item \li!set()!
+          \item \li!\{1, 2, 3\}!
+        \end{itemize}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 1}
+    \label{problema-alumnos-1}
+    Los datos de los alumnos de una universidad \\
+    están almacenados en un diccionario. \\
+    Las llaves son los roles,
+    y los valores son tuplas \\
+    con el nombre, el apellido
+    y la fecha de nacimiento: \\
+    \tiny
+    \lstinputlisting[linerange=1-10]{programas/alumnos.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 1 (continuación)}
+    \label{problema-alumnos-2}
+    Los inscritos de cada ramo están registrados \\
+    en otro diccionario. Las llaves son los nombres de los ramos,
+    y cada valor es el conjunto de los roles \\
+    de los alumnos que están tomando el ramo:
+    \tiny
+    \lstinputlisting[linerange=12-17]{programas/alumnos.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 1 (continuación)}
+    \label{problema-alumnos-3}
+    \textbf{Ejercicio 1} \\
+    Escriba la función \li!ramos_alumno(rol)! \\
+    que retorne la lista de los ramos que está tomando \\
+    el alumno con el rol entregado como parámetro:
+    \lstinputlisting{programas/caso-ramos-alumno.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 1 (continuación)}
+    \label{problema-alumnos-4}
+    \textbf{Ejercicio 2} \\
+    Escriba la función \li!alumno_mas_joven()! \\
+    que retorne el nombre completo del alumno más joven:
+    \lstinputlisting{programas/caso-alumno-mas-joven.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 2}
+    \label{problema-futbol-1}
+    Los resultados de un campeonato de fútbol \\
+    están almacenados en un diccionario:
+    \lstinputlisting[linerange=1-8]{programas/campeonato.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 2 (continuación)}
+    \label{problema-futbol-2}
+    \textbf{Ejercicio 1} \\
+    Escriba la función \li!obtener_lista_equipos!
+    que retorne la lista de los equipos
+    que participan en el campeonato:
+    \lstinputlisting{programas/caso-obtener-lista-equipos.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 2 (continuación)}
+    \label{problema-futbol-3}
+    \textbf{Ejercicio 2} \\
+    El equipo que gana un partido, recibe 3 puntos. \\
+    En caso de empate, ambos equipos reciben 1 punto. \\
+    \vspace{1ex}
+    Escriba la función \li!calcular_puntos(equipo)! \\
+    que retorne la cantidad de puntos obtenidos \\
+    por el equipo pasado como parámetro:
+    \lstinputlisting{programas/caso-calcular-puntos.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 2 (continuación)}
+    \label{problema-futbol-4}
+    \textbf{Ejercicio 3} \\
+    La \emph{diferencia de goles} de un equipo
+    es el total de los goles que anotó menos el total de goles que recibió. \\
+    \vspace{1ex}
+    Escriba la función \li!calcular_diferencia(equipo)! \\
+    que retorne la diferencia de goles
+    del equipo pasado como parámetro:
+    \lstinputlisting{programas/caso-calcular-diferencia.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 3}
+    \label{problema-asistencia-1}
+    La asistencia de los alumnos a clases \\
+    puede ser llevada en una tabla como ésta:
+    {\footnotesize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|}\hline
+      Clase    & 1& 2& 3& 4& 5& 6& 7\\\hline\hline
+      Pepito   &\T&\T&\T&\F&\F&\F&\F\\\hline
+      Yayita   &\T&\T&\T&\F&\T&\F&\T\\\hline
+      Fulanita &\T&\T&\T&\T&\T&\T&\T\\\hline
+      Panchito &\T&\T&\T&\F&\T&\T&\T\\\hline
+    \end{tabular}
+    }
+
+    \vspace{1ex}
+    La tabla puede ser representada como una lista de listas con valores booleanos:
+    \footnotesize
+    \lstinputlisting[linerange=1-7]{programas/asistencia.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 3 (continuación)}
+    \label{problema-asistencia-2}
+    \textbf{Ejercicio 1} \\
+    Escriba la función \li!total_por_alumno(tabla)!
+    que reciba como parámetro la tabla de asistencia
+    y retorne una lista con el número de clases
+    asistidas por cada alumno:
+    \lstinputlisting{programas/caso-asistencia-total-alumno.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 3 (continuación)}
+    \label{problema-asistencia-3}
+    \textbf{Ejercicio 2} \\
+    Escriba la función \li!total_por_clase(tabla)!
+    que reciba como parámetro la tabla de asistencia
+    y retorne una lista con el número de alumnos \\
+    que asistió a cada clase:
+    \lstinputlisting{programas/caso-asistencia-total-clase.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Problema 3 (continuación)}
+    \label{problema-asistencia-4}
+    \textbf{Ejercicio 3} \\
+    Escriba la función \li!alumno_estrella(tabla)!
+    que reciba como parámetro la tabla de asistencia
+    y retorne el nombre del alumno que asistió a más clases:
+    \lstinputlisting{programas/caso-asistencia-estrella.py}
+  \end{frame}
+
+\end{document}
+

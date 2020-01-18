@@ -1,0 +1,175 @@
+\documentclass[12pt]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{courier}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\definecolor{lightbox}{HTML}{FFEEC1}
+\definecolor{tablerule}{HTML}{333333}
+\definecolor{novar}{HTML}{CCCCCC}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\newcolumntype{x}{>{\ttfamily}r<{}}
+\newcolumntype{z}{!{\color{tablerule}\vline}}
+\input{../latex/definiciones.tex}
+
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\title{Funciones}
+\author{
+  Programación \\ \url{http://progra.usm.cl}
+}
+\date{}
+
+\begin{document}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Uso de funciones}
+    \label{uso-funcion-abs}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+        Cálculo del valor absoluto de \(x\)
+        usando la definción:
+      \column{0.5\textwidth}
+        Cálculo del valor absoluto de \(x\)
+        usando la función \li!abs!:
+    \end{columns}
+    \vspace{2ex}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+        \footnotesize
+        \lstinputlisting{programas/valor-absoluto-if.py}
+      \column{0.5\textwidth}
+        \footnotesize
+        \lstinputlisting{programas/valor-absoluto-fn.py}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Uso de funciones}
+    \label{uso-funcion-factorial}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+        Cálculo del factorial \(n! = 1\cdot 2\cdot\;\cdots\;\cdot n\):
+      \column{0.5\textwidth}
+        Nos gustaría
+        poder hacerlo así:
+    \end{columns}
+    \vspace{2ex}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+        \footnotesize
+        \lstinputlisting{programas/factorial-for.py}
+      \column{0.5\textwidth}
+        \footnotesize
+        \lstinputlisting[linerange=7-9]{programas/factorial-fn.py}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Definición de funciones}
+    \label{def-fn-factorial}
+    \lstinputlisting{programas/factorial-fn.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{conceptos-funciones}
+    \begin{block}{Conceptos}
+      \begin{itemize}
+        \item Parámetros
+        \item Variables \textbf{locales} de \li!factorial!
+        \item Variables \textbf{globales}
+        \item Valor de retorno
+      \end{itemize}
+    \end{block}
+    \footnotesize
+    \lstinputlisting{programas/factorial-fn.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Ruteo}
+    \label{ruteo-fn-factorial}
+    \footnotesize
+
+    \begin{columns}[t]
+      \column{0.40\textwidth}
+        \begin{tabular}{xzx||xzxzx}\toprule%
+          \multicolumn{2}{c||}{Globales} &
+          \multicolumn{3}{c}{Locales} \\
+          n &  f & n & i & prod  \\ \midrule
+          4 &    &  \multicolumn{3}{c}{\cellcolor{novar}} \\
+            &    & 4 &   &       \\
+            &    &   &   & 1     \\
+            &    &   & 1 &       \\
+            &    &   &   & 1     \\
+            &    &   & 2 &       \\
+            &    &   &   & 2     \\
+            &    &   & 3 &       \\
+            &    &   &   & 6     \\
+            &    &   & 4 &       \\
+            &    &   &   & 24    \\
+            &    & \multicolumn{3}{c}{\cellcolor{novar}} \\
+            & 24 & \multicolumn{3}{c}{\cellcolor{novar}} \\
+          \bottomrule
+        \end{tabular}
+
+      \column{0.35\textwidth}
+        \tiny
+        \lstinputlisting[backgroundcolor=\color{lightbox}]%
+          {programas/factorial-fn.py}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \label{funciones-consola}
+    \frametitle{Probar funciones en la consola}
+    \lstinputlisting{programas/fn-factorial-consola.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicio-binomial}
+    \frametitle{Ejercicio: coeficiente binomial}
+    Escriba un programa que calcule
+    el \emph{coeficiente binomial}:
+    \[
+      \binom{n}{k} = \frac{n!}{(n - k)!\;k!}
+    \]
+    \lstinputlisting[language=testcase]{programas/caso-binomial.txt}
+  \end{frame}
+
+  \begin{frame}
+    \label{solucion-binomial}
+    \frametitle{Solución}
+    \lstinputlisting{programas/binomial.py}
+  \end{frame}
+
+  \begin{frame}
+    \label{ejercicio-contar-letras}
+    \frametitle{Ejercicio: contar letras}
+    Escriba la función \li!contar! para completar este programa:
+    \footnotesize
+    \lstinputlisting[linerange=9-14]{programas/contar-letras.py}
+    \lstinputlisting[language=testcase]{programas/caso-contar-letras.txt}
+  \end{frame}
+
+  \begin{frame}
+    \label{solucion-contar-letras}
+    \frametitle{Solución}
+    \lstinputlisting{programas/contar-letras.py}
+  \end{frame}
+
+\end{document}
+

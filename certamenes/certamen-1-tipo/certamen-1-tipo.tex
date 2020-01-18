@@ -1,0 +1,34 @@
+\documentclass[11pt,spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\newcommand{\titulo}{Certamen 1 tipo}
+
+\input{../../latex/encabezado.tex}
+\input{../../latex/definiciones.tex}
+
+\begin{document}
+  \begin{enumerate}[font=\Large\bfseries]
+    \item
+      \input{ruteo/pregunta.tex}
+      \newpage
+    \item
+      \input{triangulos/pregunta.tex}
+      \newpage
+    \item
+      \input{seno/pregunta.tex}
+      \newpage
+    \item
+      \input{lotka-volterra/pregunta.tex}
+  \end{enumerate}
+\end{document}
+

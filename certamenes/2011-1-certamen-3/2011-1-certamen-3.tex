@@ -1,0 +1,40 @@
+\documentclass[legalpaper, 11pt,spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{mathpazo}
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usetikzlibrary{arrows}
+
+\hyphenation{arre-glos dife-rencias tempe-ra-turas}
+
+\newcommand{\titulo}{Certamen 3, sábado 18 de junio de 2011}
+
+\input{../../latex/encabezado.tex}
+\input{../../latex/definiciones.tex}
+
+\begin{document}
+  \begin{enumerate}[font=\Large\bfseries]
+    \item
+      \pond{25}
+      \input{programitas/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{series-de-tiempo/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{marcador/pregunta.tex}
+      \newpage
+    \item
+      \pond{25}
+      \input{arreglo-imagen/pregunta.tex}
+  \end{enumerate}
+\end{document}
+
