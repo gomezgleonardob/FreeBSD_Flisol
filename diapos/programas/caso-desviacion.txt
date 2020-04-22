@@ -1,8 +1,0 @@
-Cuantos datos? `5`
-Dato 1: `2.4`
-Dato 2: `7.1`
-Dato 3: `3.8`
-Dato 4: `3.3`
-Dato 5: `4.9`
-La desviacion estandar es 1.80693109996
-

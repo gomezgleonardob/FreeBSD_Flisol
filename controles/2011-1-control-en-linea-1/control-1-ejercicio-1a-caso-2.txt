@@ -1,4 +1,0 @@
-Ciudad de origen: `A`
-Nombre: `B`
-Apellido: `C`
-Hola, B C de A

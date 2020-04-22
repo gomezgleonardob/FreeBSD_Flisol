@@ -1,5 +1,0 @@
-archivo = open('quijote.txt', 'a')
-archivo.write('de los de lanza en astillero\n')
-archivo.write('adarga antigua, rocin flaco ')
-archivo.write('y galgo corredor.\n')
-archivo.close()

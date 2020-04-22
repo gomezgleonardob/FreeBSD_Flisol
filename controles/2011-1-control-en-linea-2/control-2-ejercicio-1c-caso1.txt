@@ -1,3 +1,0 @@
-Horas: `19`
-Minutos: `25`
-Han transcurrido 2640 segundos

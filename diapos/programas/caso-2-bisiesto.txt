@@ -1,2 +1,0 @@
-Ingrese un anno: `2011`
-2011 no es bisiesto

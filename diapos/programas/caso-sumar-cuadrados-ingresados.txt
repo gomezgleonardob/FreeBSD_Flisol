@@ -1,5 +1,0 @@
-`5`
-`1`
-`4`
-`0`
-La suma de cuadrados es 42

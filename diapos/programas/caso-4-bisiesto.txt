@@ -1,2 +1,0 @@
-Ingrese un anno: `2400`
-2400 es bisiesto

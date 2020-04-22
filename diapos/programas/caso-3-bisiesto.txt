@@ -1,2 +1,0 @@
-Ingrese un anno: `1700`
-1700 no es bisiesto

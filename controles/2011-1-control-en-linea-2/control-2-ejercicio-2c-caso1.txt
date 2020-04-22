@@ -1,3 +1,0 @@
-Fila: `6`
-Columna: `3`
-Blanca

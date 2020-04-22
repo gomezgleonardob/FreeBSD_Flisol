@@ -1,2 +1,0 @@
-Ingrese un anno: `1988`
-1988 es bisiesto

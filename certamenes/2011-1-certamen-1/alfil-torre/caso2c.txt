@@ -1,5 +1,0 @@
-Fila alfil: `3`
-Columna alfil: `3`
-Fila torre: `8`
-Columna torre: `5`
-Ninguna captura

@@ -1,4 +1,0 @@
-Ciudad de origen: `Vallenar`
-Nombre: `Juan`
-Apellido: `Perez`
-Hola, Juan Perez de Vallenar

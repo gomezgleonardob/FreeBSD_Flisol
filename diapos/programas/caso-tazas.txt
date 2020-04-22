@@ -1,4 +1,0 @@
-Ingrese i: `1897`
-Ingrese j: `992`
-True
-

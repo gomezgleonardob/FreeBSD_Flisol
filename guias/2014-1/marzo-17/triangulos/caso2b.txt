@@ -1,4 +1,0 @@
-Ingrese a: `2.0`
-Ingrese b: `1.9`
-Ingrese c: `2.0`
-El triangulo es isoceles.
