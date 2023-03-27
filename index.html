@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>FLISOL 2021</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/atom-one-light.css">
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="plugin/fontawesome/css/all.min.css" />
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section class="center" style="font-size: 20px;">
+        <h1>SISTEMAS MÓVILES OPENSOURCE</h1>
+        <ul>
+          <li class="fragment">Presentación</li>
+          <li class="fragment">¿Por que Sistemas Libres?</li>
+          <li class="fragment">Uboot</li>
+          <li class="fragment">Ofono</li>
+          <li class="fragment">Maemo Leste</li>
+          <li class="fragment">PosmarketOS</li>
+        </ul>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Presentación</h1>
+        <dl>
+          <dt class="fragment"><i class="fas fa-smile"> Leonardo Gómez</i></dt>
+          <dt class="fragment"> <i class="fas fa-at"> gomezgleonardob@disroot.org </i></dt>
+          <dt class="fragment"> <i class="fab fa-twitter"> @gomezgleonardob </i></dt>
+        </dl>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Uboot</h1>
+         <p class="fragment">Es un bootloader que se utiliza en dispositivos embebidos para empaquetar las instrucciones de arranque del núcleo del sistema operativo del dispositivo. Está disponible para varias arquitecturas informáticas </p>
+          <img class="fragment" alignment="center " width="20%" height="20%" src="img/uboot.png"
+          alt=""></img>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">Uboot</h1>
+          <img class="fragment" alignment="center " width="70%" height="70%" src="img/9Sjs3.jpg"
+          alt=""></img>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Ofono</h1>
+         <p class="fragment">Ofono es un framework que proporciona una stack para interconectar dispositivos de telefonía móvil.
+          oFono se controla a través del <b>D-Bus;</b> por ejemplo, se puede decir a ofono que envíe comandos AT
+          a través de /dev/rfcomm0 llamando al D-Bus </p>
+          <img class="fragment" alignment="center " width="20%" height="20%" src="img/ofono-listing.png"
+          alt=""></img>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Ofono</h1>
+        <ul>
+          <li class="fragment">Framework desarrollado por Intel y Nokia para usar con comunicaciones UMTS/GPRS</li>
+          <li class="fragment">Se divide en dos partes: una API para plugins, la cual estará encargada de comunicarse con el hardware, y una API de alto nivel que será un ambiente rico para desarrolladores</li>
+          <li class="fragment">D-Bus (Desktop Bus) es un sistema de comunicación entre procesos (IPC) y una llamada a procedimiento remoto (RPC) , para aplicaciones de software</li>
+        </ul>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Ofono</h1>
+        <img class="fragment" alignment="left " width="80%" height="80%" src="img/oFono +Architecture+16.jpg"
+          alt=""></img>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">¿PORQUÉ CAMBIAR?</h1>
+        <p class="fragment">Existen varias opciones de sistemas operativo móviles entre los cuales más resaltan <b>Android</b> e <b>IOS</b>,pero siempre existira un nicho donde quieres controlar y personalizar ciertos aspectos del dispositivo que usas. </p>
+        <ul>
+          <li class="fragment">Tizen</li>
+          <li class="fragment">Sailfish</li>
+          <li class="fragment">LinageOS</li>
+          <li class="fragment">AOSP</li>
+        </ul>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">MAEMO</h1>
+        <p class="fragment">MAEMO nace como una plataforma de software creada por Nokia por necesidades smartphones y tabletas. El sistema se basa en una distribución GNU / Linux Debian. La plataforma consta del sistema operativo Maemo SDK</p>
+        <img class="fragment" alignment="left " width="40%" height="40%" src="img/tZ7wdD.jpg"
+          alt=""></img>
+      </section>
+       
+      <section style="font-size: 28px;">
+        <h1 class="fragment">HILDON</h1>
+        <p class="fragment">Es un framework desarrollado originalmente para dispositivos móviles (PDAs, teléfonos móviles, etc.) que ejecutan el sistema operativo Linux, así como el sistema operativo Symbian.</p>
+        <h3 class="fragment">Componentes</h3>
+        <ul>
+          <li class="fragment">Application Manager: Es un gestor gráfico de paquetes que utiliza las herramientas de gestión de paquetes de Debian APT</li>
+          <li class="fragment">Control Panel: Interfaz de configuración del usuario</li>
+          <li class="fragment">Desktop: Interfaz de usuario principal que es usada para lanzar apps,volumen,brillo</li>
+          <li class="fragment">Library: Herramienta para desarrollo se basaba en GTK+</li>
+        </ul>
+      </section>
+      <section style="font-size: 28px;">
+        <h1 class="fragment">HILDON</h1>
+        <img class="fragment" alignment="left " width="40%" height="40%" src="img/1024px-Asus_flo_hildon.jpg"
+          alt=""></img>
+          <img class="fragment" alignment="right" width="40%" height="40%" src="img/1024px-Ubuntumobile.jpg"
+          alt=""></img>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">EVOLUCIÓN</h1>
+        <ul>
+          <li class="fragment"> OS2006 / Maemo 2 / Mistral Scirocco </li>
+          <li class="fragment"> OS2008 / Maemo 4 / Chinook - Diablo</li>
+          <li class="fragment"> Maemo 5 / Fremantle</li>
+          <li class="fragment"> MeeGo / Harmattan</li>
+          <li class="fragment"> Maemo Leste</li>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">MAEMO LESTE</h1>
+        <ul>
+          <li class="fragment"> Maemo Leste se basa en Devuan Beowulf (Debian Buster) y todos los dispositivos compatibles vienen con núcleos Linux </li>
+          <li class="fragment"> Se basa en el kernel principal de Linux </li>
+          <li class="fragment"> Mantenido por la comunidad mediante CSSU</li>
+          <li class="fragment"> Varias apps basadas en FOSS y GTK disponibles</li>
+          <ul>
+      </section>
+     
+      <section style="font-size: 28px;">
+        <h1 class="fragment">ESTADO ACTUAL</h1>
+
+        <li class="fragment"><b>Alpha:</b> USB Host, Teclado Virtual, Wireless, Audio </li>
+        <li class="fragment"><b>WIP:</b> Ofono (GSM Capabalities), Sensors, Browser </li>
+        <li class="fragment"><b>WPorting:</b> CSSU, Maemo Patches, Drivers </li>
+        <li class="fragment"><b>Revisión General:</b> https://leste.maemo.org/Status</li>
+
+      </section>
+
+      <section style="font-size: 28px;">
+
+        <h1 class="fragment">INSTALACIÓN</h1>
+
+        <p class="fragment">Descargar la imagen para su dispositvo compatible de https://maedevu.maemo.org/images/</p>
+        <pre class="fragment">
+                      <code class="fragment" class="lhpython3" data-trim >
+                # Windows              
+                Usando Win32Imager o BalenaEtcher para restaurar la imagen a memoria Microsd
+  
+                #Linux
+                Usando dd y identificando el dispositivo sdx copiar el contenido a la Microsd
+               
+                #MAC
+                Usando diskutil y identificando el dispositivo diskN copiar el contenido a la Microsd
+                      </code>
+          </pre>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">DISPOSITIVOS</h1>
+
+        <li class="fragment"><b>Nokia N900:</b> Wifi, battery, touchscreen, keyboard, USB , Audio, 3G , SMS </li>
+        <li class="fragment"><b>Droid 4:</b> Wifi, battery, touchscreen, keyboard, USB , Audio, 3G , SMS </li>
+
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">DEMO</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XCnErJnkWQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </section>
+      
+      <section style="font-size: 28px;">
+        <h1 class="fragment">PosmarketOS</h1>
+        <ul>
+          <li class="fragment">Se basa en Alpine Linux y todos los dispositivos compatibles vienen con núcleos Linux </li>
+          <li class="fragment"> Se basa en el modelo FOSS</li>
+        </ul>
+      </section>
+
+      <section style="font-size: 28px;">
+      <h1 class="fragment">INSTALACIÓN</h1>
+
+      <p class="fragment">Descargar la imagen para su dispositvo compatible de https://images.postmarketos.org/bpo/</p>
+      <pre class="fragment">
+                    <code class="fragment" class="lhpython3" data-trim >
+              # Windows              
+              Usando Win32Imager o BalenaEtcher para restaurar la imagen a memoria Microsd
+
+              #Linux
+              Usando dd y identificando el dispositivo sdx copiar el contenido a la Microsd
+             
+              #MAC
+              Usando diskutil y identificando el dispositivo diskN copiar el contenido a la Microsd
+                    </code>
+        </pre>
+    </section>
+
+  
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">DISPOSITIVOS</h1>
+
+        <li class="fragment"><b>Dispositivos</b>https://wiki.postmarketos.org/wiki/Devices</li>
+        <h3><span class="mw-headline" id="Status_Legend">Status Legend</span></h3>
+      </section>
+
+      <section style="font-size: 28px;">
+        <h1 class="fragment">DEMO</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y8W-G0G8ajg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+ 
+
+   
+
+  
+  
+      <section style="font-size: 28px;">
+        <h1 class="fragment">DEMO</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=y8W-G0G8ajg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </section>
+      
+
+      <footer class="footer fragment">
+
+      </footer>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      history: true,
+      center: false,
+      maxScale: 0.7,
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+
+</html>
