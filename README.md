@@ -1,5 +1,11 @@
 # Flisol
 
-# Maemo Leste Wiki
+# Slides
 
-# Video con Subtítulos
+https://flisolfreebsd.netlify.app/
+
+# Documentación
+ 
+# Grupos Telegram
+
+# Acerca de 
